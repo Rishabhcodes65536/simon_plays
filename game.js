@@ -67,10 +67,18 @@ function abc_blue() {
     userColorInput("blue");
 }
 
+function animate(color){
+    $("#"+color).addClass("pressed");
+    setTimeout(function(){
+        $("#"+color).removeClass("pressed");
+    },100);
+}
+
 function userColorInput(color){
     if (isstart == 1) {
       console.log(color);
       $("#"+color).fadeIn(100).fadeOut(100).fadeIn(100);
+      animate()
       var audio = new Audio("sounds/" + color+ ".mp3");
       audio.play();
       if (arr[arrptr] != color) {
