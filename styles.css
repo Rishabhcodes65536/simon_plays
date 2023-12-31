@@ -10,6 +10,13 @@ body {
   color: #FEF2BF;
 }
 
+.over-class{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
 .container {
   display: block;
   width: 50%;
@@ -27,8 +34,9 @@ body {
 }
 
 .game-over {
-  background-color: red;
+  /* background-color: red; */
   opacity: 0.8;
+  color:red
 }
 
 .red {
